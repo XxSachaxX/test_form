@@ -3,12 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>form_test</title>
+	<title>Pizza form</title>
 </head>
 <body>
+
+	<section>
+		<h1>Let's eat pizza!</h1>
+	</section>
+	<hr>
+	<br>
+
 <form>
 	<h1>Make your own Pizza!</h1>
 	<section class="dough_selection">
+		<h2>The dough of your pizza</h2>
+		<br>
 		<label for="dough">What type of dough would you like?</label>
 		<input list="doughs" name="dough" id="dough">
 		<datalist id="doughs">
@@ -17,6 +26,42 @@
 			<option value="Cheesy crust"></option>
 		</datalist>
 	</section>
+	<hr>
+	<br>
+
+	<section class = "base_selection">
+		<h2>The base of your pizza</h2>
+		<br>
+		<label for ="base">What base would you like?</label>
+		<input type="radio" name="base" id="tomato" name="tomato" >
+		<label for="tomato">Tomato</label>
+		<input type="radio" name="base" id="cream" name="cream" >
+		<label for="cream">Cream</label>
+		<input type="radio" name="base" id="none" name="none" >
+		<label for="none">None</label>
+	</section>
+	<hr>
+	<br>
+
+	<section class="ingredients_selection">
+		<h2>What ingredients would you like on your pizza?</h2>
+		 <input type="checkbox" name="ingredients" id="cheese" value="cheese">
+          <label for="cheese">Cheese</label>
+           <input type="checkbox" name="ingredients" id="ham" value="ham">
+          <label for="ham">Ham</label>
+           <input type="checkbox" name="ingredients" id="mushrooms" value="mushrooms">
+          <label for="mushrooms">Mushrooms</label>
+           <input type="checkbox" name="ingredients" id="olives" value="olives">
+          <label for="olives">Olives</label>
+	</section>
+	<hr>
+	<br>
+
+	<section>
+		<h1>Personnal preferences and allergies</h1>
+		<textarea name="preferences" rows="3" cols="" placeholder="Let us know if you have any personnal preferences or allergies."></textarea>
+	</section>
+
 </form>
 </body>
 </html>
